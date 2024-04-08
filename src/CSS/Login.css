@@ -1,0 +1,237 @@
+.circles{
+    position: absolute;
+    background-color:aliceblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    z-index: 10;
+    overflow: hidden;
+}
+  .circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2FBFBF;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+  @keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+.Inicio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+}
+.Inicio .logo-inicio *{
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+.Inicio .logo-inicio{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.Inicio img{
+    max-width: 400px;
+}
+.Inicio h1{
+    font-size: 60px;
+}
+.Inicio h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.Inicio .login{
+    width: 300px;
+}
+.Inicio aside{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Inicio aside span{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.Inicio i{
+    font-size: 30px;
+}
+.Inicio input{
+    width: 100%;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 0px 5px #0005;
+    border: none;
+    transition: all .3s;
+}
+.Inicio input:hover{
+    box-shadow: 0px 0px 5px #0007;
+}
+.Inicio input:focus{
+    box-shadow: 0px 0px 10px #0007;
+}
+.Inicio button{
+    width: 100%;
+    background-color: #2FBFBF;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #0005;
+    cursor: pointer;
+    transition: all .3s;
+}
+.Inicio button:active{
+    transform: scale(.9);
+    box-shadow: 0px 0px 10px #0007;
+}
+.Inicio aside h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+    .Inicio{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .Inicio .logo-inicio{
+        flex-grow:0;
+        height: fit-content;
+        width: 100%;
+    }
+    .Inicio h1{
+        font-size: 30px;
+    }
+    .Inicio h3{
+        font-size: 20px;
+    }
+    .Inicio aside h2{
+        font-size: 30px;
+    }
+    .Inicio aside{
+        height: fit-content;
+        width: 100%;
+    }
+    .Inicio .logo-inicio img{
+        width: 200px;
+    }
+    .Inicio i{
+        font-size: 20px;
+    }
+    .Inicio input{
+        font-size: 20px;
+    }
+    .Inicio aside span{
+        margin-bottom: 20px;
+    }
+  }
